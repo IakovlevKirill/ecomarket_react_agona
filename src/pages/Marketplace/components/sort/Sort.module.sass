@@ -1,0 +1,22 @@
+@import "../../../../styles-global/mixins"
+.block
+  display: flex
+  flex-direction: row
+
+.white
+  background: $colorBottomLight
+  color: rgba($colorTextGrey, 0.8)
+  font-weight: 400
+  margin-right: 10px
+  border-radius: 61px
+  height: 40px
+  border: none
+  padding: 10px 20px
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.white:hover, .white:focus
+  background: $colorBottomDark
+  color: $colorWhite

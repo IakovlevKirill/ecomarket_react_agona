@@ -1,0 +1,26 @@
+@import "../../../../styles-global/mixins"
+
+.label
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-bottom: 3px
+  font-weight: 400
+  color: rgba($colorTextGrey, 0.72)
+
+  &__checkBox
+    width: 18px
+    height: 18px
+    border: 1.5px solid rgba(0, 11, 38, 0.4)
+    border-radius: 4px
+    margin-right: 10px
+
+    &:checked
+      background-color: $colorGreen
+      background-image: url("../../../../assets/img/Check_vector.svg")
+      background-position: center
+      background-repeat: no-repeat
+      border-color: $colorGreen
+
+    &:checked ~ span
+      font-weight: 500

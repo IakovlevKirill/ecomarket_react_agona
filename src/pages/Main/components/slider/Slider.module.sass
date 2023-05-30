@@ -1,0 +1,58 @@
+@import "../../../../styles-global/mixins"
+
+.slider
+  align-items: center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-top: 40px
+
+  &__content
+    align-items: center
+    display: flex
+    flex-direction: row
+    color: $colorMain
+    border-radius: 18px
+    padding-left: 50px
+    overflow: hidden
+
+    &__bl
+      display: flex
+      flex-direction: column
+
+      &__text1
+        font-weight: 700
+        font-size: 2.7rem
+        margin-bottom: 15px
+
+      &__text2
+        font-weight: 400
+        font-size: 1rem
+        margin-bottom: 35px
+
+      &__button
+        background: $colorGreen
+        color: $colorWhite
+        border-radius: 8px
+        align-items: center
+        padding: 12px 20px
+        font-weight: 500
+
+.arrowLeft
+  margin-right: -20px
+  z-index: 10
+
+.arrowRight
+  margin-left: -20px
+  z-index: 10
+
+.but
+  border-radius: 50%
+  background-color: white
+  box-shadow: 0 4px 24px rgba(0, 11, 38, 0.12)
+  width: 40px
+  height: 40px
+  fill: rgba($colorTextGrey, 0.72)
+  display: flex
+  align-items: center
+  justify-content: center
